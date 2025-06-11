@@ -4,8 +4,10 @@ const { executeCommandFunctionDeclaration,readFileFunctionDeclaration,writeToFil
 const { executeCommand,read_file,write_to_file,searchFiles,googleSearch } = require('./tools')
 const SYSTEM_PROMPT = require('./systeminstruction')
 const readline = require('readline');
+const dotenv = require('dotenv')
+dotenv.config()
 
-const GEMINI_API_KEY = "AIzaSyAAbrWaKJ3JJmo1owXKqHNfYSlERIDRDd4"
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY
 
 
 // Configure the client
