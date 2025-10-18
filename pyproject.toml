@@ -1,0 +1,24 @@
+[project]
+name = "shellmate"
+version = "1.0.0"
+description = "ShellMate — your intelligent terminal assistant powered by Gemini"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Shushanth Mittpally" }]
+
+dependencies = [
+"python-dotenv>=1.0.1",
+"langchain-google-genai>=2.1.12",
+"psycopg2-binary>=2.9.11",
+"pymongo>=4.15.3",
+"requests>=2.32.5",
+"rich>=13.7.0",
+"typer>=0.9.0"
+]
+
+[project.scripts]
+shellmate = "shellmate.main:app"
+
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
