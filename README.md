@@ -48,7 +48,12 @@ ShellMate-/
 
 You can run ShellMate from any folder without packaging:
 
-```python E:/shellmate-with-python/main.py```
+```bash
+python path/to/the/shellmate/porject
+
+example:
+python E:/ShellMate-/main.py
+```
 
 
 
@@ -134,6 +139,7 @@ CREATE TABLE conversations (
 https://github.com/user-attachments/assets/615c52d9-a2cd-4226-8084-43d3768fceaf
 
 https://github.com/user-attachments/assets/32761f1e-9bf4-4e44-b1d1-faeb136d6e97
+
 
 
 
