@@ -126,3 +126,14 @@ CREATE TABLE conversations (
 - **timestamp stores when the conversation occurred.**
 
 - **session_id can be used to group messages belonging to the same session.**
+
+
+
+## Demo Videos 🎥:
+
+https://github.com/user-attachments/assets/615c52d9-a2cd-4226-8084-43d3768fceaf
+
+https://github.com/user-attachments/assets/32761f1e-9bf4-4e44-b1d1-faeb136d6e97
+
+
+
