@@ -81,6 +81,48 @@ You can run ShellMate from any folder without packaging:
 
 - **Ensure your Python environment has all dependencies installed.**
 
-- **Logs and DB features only work if ENABLE_DB_LOGGING=true in .env.**
+- **ENABLE_DB_LOGGING — if set to true, ShellMate will send chats to the configured database (PostgreSQL or MongoDB) for storage. Set to false to skip sending chats. Chats are not stored if set to false**
 
 - **Keep uv.lock in the repo to ensure reproducible dependency versions.**
+
+
+## MongoDB Schema
+
+**MongoDB is schemaless, but your documents will have the following fields:**
+```json
+{
+  "session_id": "<string>",          
+  "user_input": "<string>",          
+  "agent_output": "<string>",        
+  "tools_used": ["<string>", ...],   
+  "timestamp": "<datetime>",         
+  "current_directory": "<string>",   
+  "os": "<string>"                   
+}
+```
+
+**Collection: `conversations`**
+
+---
+
+## PostgreSQL Schema
+
+**For PostgreSQL, the equivalent table can be defined like this:**
+
+```sql
+CREATE TABLE conversations (
+    id SERIAL PRIMARY KEY,
+    session_id VARCHAR(255) NOT NULL,
+    user_input TEXT NOT NULL,
+    agent_output TEXT NOT NULL,
+    tools_used JSONB,            
+    timestamp TIMESTAMP NOT NULL,
+    current_directory TEXT,
+    os VARCHAR(50)
+);
+```
+- **tools_used is stored as JSONB to preserve the array structure.**
+
+- **timestamp stores when the conversation occurred.**
+
+- **session_id can be used to group messages belonging to the same session.**
