@@ -1,6 +1,6 @@
 # 🐚 ShellMate
 
-**ShellMate is an intelligent terminal assistant that allows users to interact with AI directly from their command line. Powered by Gemini, it can answer queries, run terminal commands, manage files, read directories, and perform Google searches, providing contextual assistance while you work on your projects. With optional database logging, modular tools, and easy setup, ShellMate is designed to streamline your workflow, making it possible to access AI assistance from anywhere on your system without complicated installation or packaging.**
+**ShellMate is an intelligent terminal assistant that allows users to interact with AI directly from their command line. Powered by Gemini, it can answer queries, run terminal commands, manage files(read and write to files), read directories, and perform Google searches, providing contextual assistance while you work on your projects. With optional database logging, modular tools, and easy setup, ShellMate is designed to streamline your workflow, making it possible to access AI assistance from anywhere on your system without complicated installation or packaging.**
 
 ---
 
@@ -139,6 +139,7 @@ CREATE TABLE conversations (
 https://github.com/user-attachments/assets/615c52d9-a2cd-4226-8084-43d3768fceaf
 
 https://github.com/user-attachments/assets/32761f1e-9bf4-4e44-b1d1-faeb136d6e97
+
 
 
 
