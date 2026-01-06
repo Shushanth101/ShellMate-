@@ -31,20 +31,21 @@ ShellMate is a powerful, terminal-based AI assistant built with a **Client-Serve
 
 ```mermaid
 graph TD
-    User[User Terminal] <-->|CLI Arguments & Input| Client[ShellMate Client (main.py)]
-    Client <-->|REST API (JSON)| Server[ShellMate Server (server.py)]
-    Server <-->|SQLAlchemy| DB[(SQLite Database)]
-    Client <-->|LangChain| LLM[Google Gemini API]
-    
-    subgraph "Local Machine"
+    User[User Terminal] <-->|CLI Input| Client[ShellMate Client]
+    Client <-->|REST API JSON| Server[ShellMate Server]
+    Server <-->|SQLAlchemy ORM| DB[SQLite Database]
+    Client <-->|LangChain Calls| LLM[Google Gemini API]
+
+    subgraph Local_Machine
         Client
         Server
         DB
     end
-    
-    subgraph "Cloud"
+
+    subgraph Cloud
         LLM
     end
+
 ```
 
 ---
