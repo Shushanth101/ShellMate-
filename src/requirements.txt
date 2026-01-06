@@ -1,0 +1,19 @@
+# LangChain ecosystem
+langchain
+langchain-core
+langchain-google-genai
+langgraph
+
+# UI / Terminal
+rich
+prompt-toolkit
+InquirerPy
+pyfiglet
+termcolor
+
+# Web / API
+flask
+requests
+
+# Utilities
+python-dotenv

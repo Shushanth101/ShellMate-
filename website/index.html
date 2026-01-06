@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="ShellMate - Your Intelligent AI CLI Companion with persistent memory and agentic capabilities.">
+    <title>ShellMate | AI CLI Companion</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Shell<span class="highlight">Mate</span></div>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#architecture">Architecture</a>
+            <a href="#demo">Demo</a>
+            <a href="#get-started" class="btn-primary">Get Started</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="Your Intelligent CLI Companion">Your Intelligent CLI Companion</h1>
+            <p class="subtitle">Persistent Memory. Secure Auth. Agentic Power. <span class="highlight">Open
+                    Source.</span></p>
+            <div class="cta-group">
+                <a href="#get-started" class="btn-primary"><i class="fas fa-terminal"></i> Install Now</a>
+                <a href="https://github.com/Shushanth101/ShellMate-" target="_blank" class="btn-secondary"><i
+                        class="fab fa-github"></i> View Repo</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <div class="terminal-body" id="typing-demo">
+                    <!-- JS will type here -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="section">
+        <h2 class="section-title">Why ShellMate?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-brain icon"></i>
+                <h3>Long-Term Memory</h3>
+                <p>ShellMate remembers you. It stores facts about your preferences and projects, injecting them into
+                    context for personalized assistance.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-shield-alt icon"></i>
+                <h3>Secure Authentication</h3>
+                <p>Built-in user management with hashed passwords ensures your chat history and memory remain private.
+                </p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-server icon"></i>
+                <h3>Client-Server Architecture</h3>
+                <p>Robust Flask backend handling persistence, decoupled from the lightweight CLI client for maximum
+                    flexibility.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-robot icon"></i>
+                <h3>Agentic Tools</h3>
+                <p>Powered by LangChain, ShellMate can browse the web, read files, and execute python code to solve
+                    complex tasks.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section (Carousel/Video) -->
+    <section id="demo" class="section dark-bg">
+        <h2 class="section-title">See It In Action</h2>
+        <div class="demo-container">
+            <video controls poster="assets/Screenshot 2025-11-29 172459.png" class="demo-video">
+                <source src="assets/Screen Recording 2025-12-12 211006.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p class="caption">Watch ShellMate handle complex workflows and interactions.</p>
+        </div>
+    </section>
+
+    <!-- Architecture Section -->
+    <section id="architecture" class="section">
+        <h2 class="section-title">How It Works</h2>
+        <div class="arch-diagram">
+            <div class="arch-box client">
+                <i class="fas fa-terminal"></i>
+                <h4>CLI Client</h4>
+                <p>User Interface</p>
+            </div>
+            <div class="arrow">⇄ API</div>
+            <div class="arch-box server">
+                <i class="fas fa-server"></i>
+                <h4>Flask Server</h4>
+                <p>Auth & DB Logic</p>
+            </div>
+            <div class="arrow">⇄ Logic</div>
+            <div class="arch-box agent">
+                <i class="fas fa-microchip"></i>
+                <h4>LangChain Agent</h4>
+                <p>Tools & Reasoning</p>
+            </div>
+        </div>
+        <div class="arch-details">
+            <p>Built with <strong>Python</strong>, <strong>LangChain</strong>, and <strong>Rich</strong>. It currently
+                uses "Free Tier" models but is designed to scale.</p>
+        </div>
+    </section>
+
+    <!-- Upgrade / Future Potential -->
+    <section id="upgrade" class="section gradient-bg">
+        <div class="content-wrapper">
+            <h2>🚀 Unlock Limitless Potential</h2>
+            <p>ShellMate is built to be model-agnostic. While it runs great on lightweight models, upgrading to
+                <strong>Gemini 1.5 Pro</strong> or <strong>GPT-4</strong> unlocks:</p>
+            <ul class="benefit-list">
+                <li><i class="fas fa-check-circle"></i> 1M+ Token Context Window for analyzing entire codebases.</li>
+                <li><i class="fas fa-check-circle"></i> Advanced Reasoning for complex architectural decisions.</li>
+                <li><i class="fas fa-check-circle"></i> Multi-modal capabilities (Image/Video inputs).</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Get Started -->
+    <section id="get-started" class="section">
+        <h2 class="section-title">Get Started</h2>
+        <div class="code-block-wrapper">
+            <div class="code-header">
+                <span>Terminal</span>
+                <button class="copy-btn" onclick="copyCode()">Copy</button>
+            </div>
+            <pre><code id="install-code"># Clone the repository
+git clone https://github.com/Shushanth101/ShellMate-.git
+cd shellmate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Start ShellMate
+python src/main.py --signup</code></pre>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ShellMate. Open Source Project.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
