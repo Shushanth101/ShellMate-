@@ -60,8 +60,8 @@ graph TD
 
 1.  **Clone the Repository**
     ```bash
-    git clone https://github.com/yourusername/shellmate.git
-    cd shellmate
+    git clone -b v3.1 https://github.com/Shushanth101/ShellMate-.git
+    cd ShellMate-
     ```
 
 2.  **Create a Virtual Environment** (Recommended)
