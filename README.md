@@ -1,4 +1,4 @@
-# ShellMate 🐚
+# [ShellMate 🐚](https://shushanth101.github.io/ShellMate-/)
 
 > **Your Advanced AI CLI Companion**
 >
