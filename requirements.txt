@@ -1,0 +1,9 @@
+langchain
+langchain-groq
+langgraph
+langgraph-checkpoint-mongodb
+pymongo
+python-dotenv
+requests
+pywinpty
+langchain-google-genai
