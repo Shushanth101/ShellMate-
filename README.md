@@ -4,7 +4,7 @@ Shellmate is a robust, terminal-based AI coding harness agent built using [LangC
 
 ## Demo
 
-<video src="shellmatev5.mp4" width="100%" controls></video>
+<video src="https://github.com/Shushanth101/ShellMate-/raw/v5/shellmatev5.mp4" width="100%" controls></video>
 
 ## Features
 
