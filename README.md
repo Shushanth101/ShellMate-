@@ -2,6 +2,10 @@
 
 Shellmate is a robust, terminal-based AI coding harness agent built using [LangChain](https://github.com/langchain-ai/langchain) and [LangGraph](https://github.com/langchain-ai/langgraph), powered by Google Gemini (`gemini-2.5-flash`).
 
+## Demo
+
+<video src="shellmatev5.mp4" width="100%" controls></video>
+
 ## Features
 
 - **Split-Screen Terminal UI (TUI)**: A clean terminal UI where conversation history scrolls in the top section and your input prompt (`you: `) remains pinned at the bottom between horizontal separators.
